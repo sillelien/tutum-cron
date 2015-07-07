@@ -27,7 +27,7 @@ do
       service_url=${!env_var}
 
 cat <<EOF >> /tmp/cron.tmp
-${schedule} curl -X POST -H "Authorization: $TUTUM_AUTH" -H "Accept: application/json" ${service_url}start/"
+${schedule} curl -X POST -H "Authorization: $TUTUM_AUTH" -H "Accept: application/json" ${service_url}start/
 EOF
     done
 
