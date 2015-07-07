@@ -40,6 +40,8 @@ Everything you need to know about scheduling can be found in the [fcrontab docum
 | +---------- Hour              (range: 0-23)
 +------------ Minute            (range: 0-59)</pre>
 
+You can of course use an online generator such as http://crontab-generator.org/ to help you along.
+
 ##Further Info
 
 The base container uses work originally taken from https://github.com/just-containers/base-alpine credit to <John Regan>john@jrjrtech.com this provides us with the S6 supervisor which this image uses to run cron, dnsmasq and the main run.sh script.
