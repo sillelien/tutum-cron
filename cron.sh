@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-exec cron
+exec /usr/sbin/fcron

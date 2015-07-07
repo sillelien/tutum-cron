@@ -27,7 +27,7 @@ EOF
     echo "Installing new crontab"
     cat /tmp/cron.tmp
 
-    crontab /tmp/cron.tmp
+    fcrontab /tmp/cron.tmp
     sleep 300
 done
   
