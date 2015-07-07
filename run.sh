@@ -3,5 +3,6 @@ for env_var in $env_vars
 do
   curl -H "Authorization: $TUTUM_AUTH" -H "Accept: application/json" $env_var
 done
+sleep 60
   
  
