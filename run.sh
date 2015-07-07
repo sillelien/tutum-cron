@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -x
+echo "root" > /etc/fcron/fcron.allow
 
 while true
 do
@@ -19,7 +20,7 @@ do
       fi
       [ ! -f /tmp/cron.tmp ] || rm /tmp/cron.tmp
       service_url=${!env_var}
-      
+
 cat <<EOF >> /tmp/cron.tmp
 ${schedule} curl -X POST -H "Authorization: $TUTUM_AUTH\" -H "Accept: application/json" ${service_url}start/ &> /dev/stdout"
 EOF
