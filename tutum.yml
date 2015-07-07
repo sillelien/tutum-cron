@@ -6,7 +6,7 @@ tutum-cron:
   roles:
     - global
   environment:
-    - TEST_CRON_SCHEDULE="*/5 * * * *"
+    TEST_CRON_SCHEDULE: '* * * * *'
   links:
     - test
 
