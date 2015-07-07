@@ -2,10 +2,7 @@
 
 ##Intro
 
-
-This scheduler uses [fcron](http://fcron.free.fr/doc/en/fcrontab.5.html) to schedule commands, fcron is great because like anacron it catches up with running services it misses while down. So it's totally okay to change the config and restart the server. 
-
-To use you need to add a link to each service you wish to schedule and then an environment variable that starts with the capitalized name of the service and which ends in _CRON_SCHEDULE, e.g.:
+To use you simply need to add a link to each service you wish to schedule and then an environment variable that starts with the capitalized name of the service and which ends in _CRON_SCHEDULE, e.g.:
 
 ```yaml
   environment:
@@ -43,6 +40,8 @@ Everything you need to know about scheduling can be found in the [fcrontab docum
 You can of course use an online generator such as http://crontab-generator.org/ to help you along.
 
 ##Further Info
+
+This scheduler uses [fcron](http://fcron.free.fr/doc/en/fcrontab.5.html) to schedule commands, fcron is great because like anacron it catches up with running services it misses while down. So it's totally okay to change the config and restart the server. 
 
 The base container uses work originally taken from https://github.com/just-containers/base-alpine credit to <John Regan>john@jrjrtech.com this provides us with the S6 supervisor which this image uses to run cron, dnsmasq and the main run.sh script.
 
