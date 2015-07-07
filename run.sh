@@ -22,6 +22,6 @@ echo "Installing new crontab"
 cat /tmp/cron.tmp
 
 crontab /tmp/cron.tmp
-sleep 180
+sleep infinity
   
  
