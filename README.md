@@ -7,7 +7,7 @@ To use you need to add a link to each service you wish scheduling and then an en
 
 ```yaml
   environment:
-    - TEST_CRON_SCHEDULE="*/5 * * * *"
+    TEST_CRON_SCHEDULE: '*/5 * * * *'
   links:
     - test
 
