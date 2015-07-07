@@ -15,7 +15,7 @@ do
   else
     schedule=${!schedule_env_var}
   fi
-  echo "${schedule} curl -X POST -H \"Authorization: $TUTUM_AUTH\" -H \"Accept: application/json\" ${!env_var}/start/ &> /dev/stdout" > /tmp/cron.tmp
+  echo ${schedule} "curl -X POST -H \"Authorization: $TUTUM_AUTH\" -H \"Accept: application/json\" ${!env_var}start/ &> /dev/stdout" > /tmp/cron.tmp
 done
 
 echo "Installing new crontab"

@@ -6,7 +6,6 @@ tutum-cron:
   roles:
     - global
   environment:
-    - DUMMY=dummy
     - TEST_CRON_SCHEDULE="*/5 * * * *"
   volumes:
     - /etc/s3-conf:/conf
@@ -17,5 +16,4 @@ tutum-cron:
 test:
   image: alpine
   command: 'echo "command ran at $(date)"'
-  environment:
 
