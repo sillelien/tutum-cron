@@ -1,0 +1,16 @@
+tutum-cron:
+  image: vizzbuzz/tutum-cron
+  autorestart: always
+  cpu_shares: 128
+  mem_limit: 64m
+  environment:
+    - DUMMY=dummy
+  volumes:
+    - /etc/s3-conf:/conf
+
+#Check the logs to see this has worked.
+test:
+  image: alpine
+  command: 'echo "command ran at $(date)"'
+  links:
+    - tutum-cron
