@@ -1,5 +1,7 @@
 FROM vizzbuzz/base-alpine
-RUN apk update && apk upgrade && \
+
+RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
+    apk update && apk upgrade && \
     apk-install curl fcron@testing bash
 
 COPY *.sh /
