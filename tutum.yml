@@ -3,6 +3,8 @@ tutum-cron:
   autorestart: always
   cpu_shares: 128
   mem_limit: 64m
+  roles:
+    - global
   environment:
     - DUMMY=dummy
   volumes:
