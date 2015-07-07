@@ -15,4 +15,4 @@ To use you need to add a link to each service you wish to schedule and then an e
 
 [![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
         
-[![](https://badge.imagelayers.io/vizzbuzz/tutum-cron)](https://imagelayers.io/?images=vizzbuzz/tutum-cron:latest 'Get your own badge on imagelayers.io')        
+[![](https://badge.imagelayers.io/vizzbuzz/tutum-cron.svg)](https://imagelayers.io/?images=vizzbuzz/tutum-cron:latest 'Get your own badge on imagelayers.io')        
