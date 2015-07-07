@@ -7,8 +7,6 @@ tutum-cron:
     - global
   environment:
     - TEST_CRON_SCHEDULE="*/5 * * * *"
-  volumes:
-    - /etc/s3-conf:/conf
   links:
     - test
 

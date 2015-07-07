@@ -1,6 +1,6 @@
 FROM vizzbuzz/base-alpine
 RUN apk update && apk upgrade && \
-    apk-install curl fcron bash
+    apk-install curl fcron@testing bash
 
 COPY *.sh /
 RUN chmod 755 /run.sh
