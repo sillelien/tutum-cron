@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 set -x
 
+while [ ! -f /run/fcron.pid ]
+do
+    echo "Waiting for fcron"
+    sleep 1
+done
+
 while true
 do
     env_vars=$(env | grep ".*_TUTUM_API_URL=" | cut -d= -f1 | tr '\n' ' ')
