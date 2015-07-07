@@ -1,5 +1,5 @@
 # tutum-cron
-A cron scheduler for Tutum
+A Cron scheduler for Tutum
 
 [![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
         
