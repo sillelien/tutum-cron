@@ -13,5 +13,5 @@ tutum-cron:
 #Check the logs to see this has worked.
 test:
   image: alpine
-  command: 'echo "command ran at $(date)"'
+  command: 'echo "command ran at `date`"'
 
