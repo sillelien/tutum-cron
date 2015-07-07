@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -x
 echo "root" > /etc/fcron/fcron.allow
+chmod 644 /etc/fcron/fcron.allow
 
 while true
 do
