@@ -4,8 +4,9 @@ set -x
 env_vars=$(env | grep ".*_TUTUM_API_URL=" | cut -d= -f1 | tr '\n' ' ')
 for env_var in $env_vars
 do
-  curl -H "Authorization: $TUTUM_AUTH" -H "Accept: application/json" $env_var
+  echo "*/5 * * * * curl -X POST -H \"Authorization: $TUTUM_AUTH\" -H \"Accept: application/json\" $env_var/start/ &> /dev/stdout" > /tmp/cron.tmp
 done
-sleep 60
+crontab /tmp/cron.tmp
+sleep 3600
   
  
