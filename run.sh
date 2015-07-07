@@ -6,7 +6,11 @@ for env_var in $env_vars
 do
   echo "*/5 * * * * curl -X POST -H \"Authorization: $TUTUM_AUTH\" -H \"Accept: application/json\" $env_var/start/ &> /dev/stdout" > /tmp/cron.tmp
 done
+
+echo "Installing new crontab"
+cat /tmp/cron.tmp
+
 crontab /tmp/cron.tmp
-sleep 3600
+sleep 180
   
  
