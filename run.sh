@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+set -x
+
 env_vars=$(env | grep "^.*TUTUM_API_URL" | cut -d= -f1 | tr '\n' ' ')
 for env_var in $env_vars
 do
