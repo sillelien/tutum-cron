@@ -10,6 +10,9 @@ done
 while true
 do
     env_vars=$(env | grep ".*_TUTUM_API_URL=" | cut -d= -f1 | tr '\n' ' ')
+
+    [ ! -f /tmp/cron.tmp ] || rm /tmp/cron.tmp
+
     for env_var in $env_vars
     do
       # Set on the remote service
@@ -23,7 +26,6 @@ do
       else
         schedule="${!schedule_env_var}"
       fi
-      [ ! -f /tmp/cron.tmp ] || rm /tmp/cron.tmp
       service_url=${!env_var}
 
 cat <<EOF >> /tmp/cron.tmp
