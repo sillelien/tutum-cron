@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -x
 
 while [ ! -f /run/fcron.pid ]
 do
@@ -37,7 +36,7 @@ EOF
     cat /tmp/cron.tmp
 
     fcrontab /tmp/cron.tmp
-    sleep 300
+    sleep 86400
 done
   
  
