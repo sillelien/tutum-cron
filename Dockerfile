@@ -1,4 +1,4 @@
-FROM vizzbuzz/base-alpine
+FROM sillelien/base-alpine:0.9.2
 
 RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk update && apk upgrade && \
