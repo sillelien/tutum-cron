@@ -21,7 +21,7 @@ You'll also want to make sure you add the `global` role on tutum-cron:
 
 Everything you really need to know is in the `tutum.yml` file, just take a look and you'll get the idea. So just press the button and get going:
 
-[![Deploy to Docker Cloud](https://s.tutum.co/deploy-to-tutum.svg)](https://cloud.docker.com/stack/deploy/)
+[![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)
 
 
 ## Schedules
