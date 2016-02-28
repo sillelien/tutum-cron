@@ -1,5 +1,5 @@
-tutum-cron:
-  image: vizzbuzz/tutum-cron
+cloud-cron:
+  image: sillelien/tutum-cron
   autorestart: always
   cpu_shares: 128
   mem_limit: 64m
@@ -14,4 +14,3 @@ tutum-cron:
 test:
   image: alpine
   command: 'echo On Schedule'
-
