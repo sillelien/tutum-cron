@@ -37,7 +37,7 @@ Everything you need to know about scheduling can be found in the [fcrontab docum
 | +---------- Hour              (range: 0-23)
 +------------ Minute            (range: 0-59)</pre>
 
-You can of course use an online generator such as http://crontab-generator.org/ to help you along.
+You can of course use an online generator such as http://crontab-generator.org/ or https://tools.hubsadda.com/crontab-generator to help you along.
 
 ##Further Info
 
